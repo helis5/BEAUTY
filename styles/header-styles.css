@@ -1,0 +1,13 @@
+header{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	flex-wrap: wrap;
+	width: 100%;
+	min-width: 322px;
+	color: white;
+}
+
+header .info .logo img{
+	height: 80px;
+}
