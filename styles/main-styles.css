@@ -6,3 +6,49 @@ main{
 	flex-direction: column;
 }
 
+main .super-chair{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 604px;
+	background: url(../images/armchair.png);
+}
+
+main .super-chair .description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 376px;
+	height: 219px;
+	/*background-color: olive;*/
+	margin-left: 335px;
+	color: white;
+}
+
+main .super-chair .description h1{
+	margin: 0px;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+main .super-chair .description p{
+	margin: 0px;
+	font-size: 14px;
+}
+
+main .super-chair .description input{
+ 	width: 170px;
+	height: 40px;
+	margin-left: 22%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid white;
+	border-radius: 40px;
+	font-size: 14px;
+	background-color: #F13C6E;
+	cursor: pointer;
+	color: white;
+}
+

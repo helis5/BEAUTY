@@ -4,10 +4,108 @@ header{
 	background-color: white;
 	flex-wrap: wrap;
 	width: 100%;
-	min-width: 322px;
 	color: white;
+}
+
+header .data{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #EFEFEF;
+	font-size: 14px;
+	color: black;
+}
+header .data .menu{
+	display: flex;
+	width: 447px;
+	justify-content: space-between;
+}
+
+header .data .menu div:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+header .info{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 199px;
+}
+
+header .info .search{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+}
+
+header .info .search .internal-elements{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1110px;
+	height: 80px;
+	color: black;
+}
+
+header .info .search .internal-elements input.string-to-enter{
+	width: 250px;
+	height: 40px;
+	border-radius: 40px;
+	border: 0px;
+	background-color: #EFEFEF;
+	outline: none;
+}
+
+header .info .search .internal-elements input.bell{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 40px;
+	border: 2px solid #F13C6E;
+	border-radius: 40px;
+	font-size: 14px;
+	background-color: white;
+	cursor: pointer;
+}
+
+header .info .search .internal-elements input.bell:hover{
+	background-color: #EFEFEF;
+}
+
+header .info .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	width: 100%;
+	height: 79px;
+}
+
+header .info .menu .internal-elements{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 675px;
+	height: 19px;
+}
+
+
+header .info .logo{
+	height: 80px;
 }
 
 header .info .logo img{
 	height: 80px;
+}
+
+header .info .horizontal-stripe{
+	width: 100%;
+	height: 1px;
+	background-color: #EFEFEF;
 }
