@@ -8,7 +8,7 @@ main{
 
 main .super-chair{
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	width: 100%;
 	height: 604px;
 	background: url(../images/armchair.png);
@@ -21,7 +21,7 @@ main .super-chair .description{
 	width: 376px;
 	height: 219px;
 	/*background-color: olive;*/
-	margin-left: 335px;
+	margin: auto;
 	color: white;
 }
 
