@@ -1,6 +1,5 @@
 
 footer{
-	background-color: none;
 	height: 161px;
 	width:100%;
 	display:flex;
@@ -9,5 +8,51 @@ footer{
 	flex-wrap:wrap;
 	font-size: 14px;
 }
+
+footer .container{
+	height: 492px;
+}
+
+footer > .container .inner{
+	width: 1120px;
+}
+
+footer .container .inner .tools{
+ 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: inherit;
+	height: 372px;
+	background-color: antiquewhite;
+}
+
+footer .container .inner .tools .column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 255px;
+	height: 253px;
+	background-color: olive;
+}
+
+footer .container .inner .social-network{
+
+}
+
+footer div.under-the-footer{
+	width: 100%;
+}
+
+footer div.under-the-footer .container{
+	background-color: #EFEFEF;
+	height: 64px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	color: #828282;
+}
+
 
 

@@ -93,7 +93,7 @@ header .search .internal-elements .string-to-enter-container:before{
 
 
 
-header .search .internal-elements input.bell{
+header .search .internal-elements button{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -106,7 +106,7 @@ header .search .internal-elements input.bell{
 	cursor: pointer;
 }
 
-header .search .internal-elements input.bell:hover{
+header .search .internal-elements button:hover{
 	background-color: #EFEFEF;
 }
 
@@ -137,11 +137,4 @@ header .logo{
 
 header .logo img{
 	height: 80px;
-}
-
-header hr{
-	width: 100%;
-	height: 1px;
-	background-color: #EFEFEF;
-	border-width: 0px;
 }

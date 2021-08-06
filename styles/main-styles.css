@@ -44,7 +44,7 @@ main .super-chair .description p{
 	font-size: 14px;
 }
 
-main .super-chair .description input{
+main .super-chair .description button{
  	width: 170px;
 	height: 40px;
 	margin-left: 22%;
@@ -58,4 +58,10 @@ main .super-chair .description input{
 	cursor: pointer;
 	color: white;
 }
+
+
+main .super-chair .description button:hover{
+	background-color: #D53562;
+}
+
 
