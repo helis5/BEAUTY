@@ -14,9 +14,8 @@ main section.background-banner.container{
 	min-height: 604px;
 	/*height: 100%;*/
 	/*padding: 10vh 0;*/
-	background: url(../images/armchair.png) no-repeat ;
 	background-size: cover;
-
+	background: url(../images/armchair.png) no-repeat center;
 }
 
 main .banner{

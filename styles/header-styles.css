@@ -31,18 +31,18 @@ header{
 	text-decoration: underline;
 }
 
-/*header .info-container{*/
+/*header-container{*/
 /*	*/
 /*	*/
 /*}*/
-header .info{
+header{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: 199px;
 }
 
-header .info .search{
+header .search{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,7 +50,7 @@ header .info .search{
 	height: 120px;
 }
 
-header .info .search .internal-elements{
+header .search .internal-elements{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -59,16 +59,41 @@ header .info .search .internal-elements{
 	color: black;
 }
 
-header .info .search .internal-elements input.string-to-enter{
+header .search .internal-elements .string-to-enter-container{
 	width: 250px;
 	height: 40px;
 	border-radius: 40px;
 	border: 0px;
 	background-color: #EFEFEF;
 	outline: none;
+	position: relative;
+	overflow: hidden;
 }
 
-header .info .search .internal-elements input.bell{
+header .search .internal-elements .string-to-enter-container input{
+	border: none;
+	width: inherit;
+	height: inherit;
+	padding: 0 20px 0 40px;
+	background-color: inherit;
+	outline: none;
+}
+
+header .search .internal-elements .string-to-enter-container:before{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 12px;
+	top: 10px;
+	display: block;
+	background-image: url("../images/search.png");
+	background-repeat: no-repeat;
+	content: "";
+}
+
+
+
+header .search .internal-elements input.bell{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -81,11 +106,11 @@ header .info .search .internal-elements input.bell{
 	cursor: pointer;
 }
 
-header .info .search .internal-elements input.bell:hover{
+header .search .internal-elements input.bell:hover{
 	background-color: #EFEFEF;
 }
 
-header .info .menu{
+header .menu{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -94,7 +119,7 @@ header .info .menu{
 	height: 79px;
 }
 
-header .info .menu .internal-elements{
+header .menu .internal-elements{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,20 +127,21 @@ header .info .menu .internal-elements{
 	width: 100%;
 	height: 19px;
 }
-header .info .menu .internal-elements > a{
+header .menu .internal-elements > a{
 	padding: 0 5px;
 }
 
-header .info .logo{
+header .logo{
 	height: 80px;
 }
 
-header .info .logo img{
+header .logo img{
 	height: 80px;
 }
 
-header .info .horizontal-stripe{
+header hr{
 	width: 100%;
 	height: 1px;
 	background-color: #EFEFEF;
+	border-width: 0px;
 }
