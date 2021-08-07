@@ -4,6 +4,7 @@ main{
 	width: 100%;
 	align-items: center;
 	flex-direction: column;
+	flex-wrap: wrap
 }
 
 main .super-chair{
@@ -16,6 +17,8 @@ main section.background-banner.container{
 	/*padding: 10vh 0;*/
 	background-size: cover;
 	background: url(../images/armchair.png) no-repeat center;
+	/*	background-size: 100% 100%;*/
+	background-color: #F13C6E;
 }
 
 main .banner{
