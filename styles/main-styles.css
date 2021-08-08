@@ -1,70 +1,144 @@
-main{
-	display: flex;
-	justify-content:center;
-	width: 100%;
-	align-items: center;
-	flex-direction: column;
-	flex-wrap: wrap
-}
-
-main .super-chair{
-	margin: auto auto auto 0;
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EFEFEF;
 
 }
-main section.background-banner.container{
-	min-height: 604px;
-	/*height: 100%;*/
-	/*padding: 10vh 0;*/
-	background-size: cover;
-	background: url(../images/armchair.png) no-repeat center;
-	/*	background-size: 100% 100%;*/
-	background-color: #F13C6E;
+
+main .super-chair {
+    margin: auto auto auto 0;
+
 }
 
-main .banner{
-	display: flex;
-}
-main .super-chair .description{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 376px;
-	height: 219px;
-	/*background-color: olive;*/
-	margin: auto;
-	color: white;
+main section.background-banner.container {
+    min-height: 604px;
+    /*height: 100%;*/
+    /*padding: 10vh 0;*/
+    background-size: cover;
+    background: url(../images/armchair-banner.png) no-repeat center;
+    /*	background-size: 100% 100%;*/
+    background-color: #F13C6E;
 }
 
-main .super-chair .description h1{
-	margin: 0px;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: bold;
+main .banner {
+    display: flex;
 }
 
-main .super-chair .description p{
-	margin: 0px;
-	font-size: 14px;
+main .super-chair .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 376px;
+    height: 219px;
+    /*background-color: olive;*/
+    margin: auto;
+    color: white;
 }
 
-main .super-chair .description button{
- 	width: 170px;
-	height: 40px;
-	margin-left: 22%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid white;
-	border-radius: 40px;
-	font-size: 14px;
-	background-color: #F13C6E;
-	cursor: pointer;
-	color: white;
+main .super-chair .description h1 {
+    margin: 0px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+main .super-chair .description p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+main .super-chair .description button {
+    width: 170px;
+    height: 40px;
+    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 14px;
+    background-color: #F13C6E;
+    cursor: pointer;
+    color: white;
+}
+
+main section.special-container {
+
+}
+
+main section.special-container > .inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+main section.special-container .inner .main-menu {
+
+}
+
+main section.special-container .inner .main-menu .special-offers {
+
+}
+
+main section.special-container .inner .main-menu .special-offers .options {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+
+main section.special-container .inner .main-menu .special-offers .options .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+    height: 363px;
+    background-color: white;
+    padding: 25px;
+}
+
+main section.special-container .inner .main-menu .special-offers .options .option img {
+    width: 125px;
+}
+
+main section.special-container .inner .main-menu .special-offers .options .option .text {
+    color: #333333;
+    margin: 0;
+    font-size: 14px;
+    margin-left: 13px;
+}
+
+main section.special-container .inner .main-menu .special-offers .options .option .price {
+    margin: 0;
+    font-size: 21px;
+}
+
+main section.special-container .inner .main-menu .special-offers .options .option button {
+    display: flex;
+    width: 130px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 14px;
+    background-color: #F13C6E;
+    cursor: pointer;
+    color: white;
+    border: 0;
 }
 
 
-main .super-chair .description button:hover{
-	background-color: #D53562;
+main .super-chair .description button:hover {
+    background-color: #D53562;
+}
+
+main .container-menu {
+    width: inherit;
+    height: 1869px;
+    background-color: #EFEFEF;
 }
 
 
