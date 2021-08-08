@@ -83,7 +83,7 @@ header .search .internal-elements .string-to-enter-container:before {
     left: 12px;
     top: 10px;
     display: block;
-    background-image: url("../images/search.png");
+    background-image: url("../images/search.svg");
     background-repeat: no-repeat;
     content: "";
 }
