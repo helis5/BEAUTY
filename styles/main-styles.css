@@ -72,7 +72,7 @@ main section.special-container > .inner {
 
 main section.special-container .inner .main-menu .special-offers .options {
     display: flex;
-    width: 1110px;
+    /*    width: 1110px;*/
     justify-content: space-between;
     margin-top: 38px;
 }
@@ -86,6 +86,12 @@ main section.special-container .inner .main-menu .special-offers .options .optio
     height: 363px;
     background-color: white;
     padding: 25px;
+    transition: 250ms;
+}
+
+main section.special-container .inner .main-menu .special-offers .options .option:hover {
+    transition: 250ms;
+    transform: scale(1.05);
 }
 
 main section.special-container .inner .main-menu .special-offers .options .option img {
@@ -132,6 +138,17 @@ main section.special-container .inner .main-menu .draws-and-card div {
     width: 540px;
     height: 212px;
     background-color: #F13C6E;
+    transition: 250ms;
+}
+
+main section.special-container .inner .main-menu .draws-and-card #card:hover{
+    transition: 250ms;
+    transform: scale(1.05);
+}
+
+main section.special-container .inner .main-menu .draws-and-card #card-2:hover{
+    transition: 250ms;
+    transform: scale(1.05);
 }
 
 main section.special-container .inner .main-menu .draws-and-card div .text {
@@ -163,11 +180,11 @@ main section.special-container .inner .main-menu .draws-and-card div .text div {
     overflow: hidden;
 }
 
-main section.special-container .inner .main-menu .draws-and-card div#card .icon{
+main section.special-container .inner .main-menu .draws-and-card div#card-2 .icon {
     width: 500px;
 }
 
-main section.special-container .inner .main-menu .draws-and-card div#card .text button{
+main section.special-container .inner .main-menu .draws-and-card div#card-2 .text button {
     width: 170px;
     height: 40px;
     display: flex;
@@ -198,7 +215,7 @@ main section.special-container .inner .main-menu .draws-and-card div .icon {
     justify-content: flex-start;
 }
 
-main section.special-container .inner .main-menu .draws-and-card div .icon img{
+main section.special-container .inner .main-menu .draws-and-card div .icon img {
     height: 105px;
 }
 
@@ -212,7 +229,7 @@ main .container-menu {
     background-color: #EFEFEF;
 }
 
-main section .inner .main-menu .firms{
+main section .inner .main-menu .firms {
     background-color: white;
     width: 1110px;
     height: 357px;
@@ -220,13 +237,14 @@ main section .inner .main-menu .firms{
     margin-bottom: 80px;
 }
 
-main section .inner .main-menu .firms div{
+main section .inner .main-menu .firms div {
     display: flex;
     width: inherit;
     height: 119px;
+    transition: 250ms;
 }
 
-main section .inner .main-menu .firms div div{
+main section .inner .main-menu .firms div div {
     display: flex;
     flex-direction: column;
     width: 278px;
@@ -236,14 +254,20 @@ main section .inner .main-menu .firms div div{
     border: 1px solid #EFEFEF;
 }
 
-main section .inner .main-menu .firms div div img{
+main section .inner .main-menu .firms div div:hover{
+    transition: 250ms;
+    transform: scale(1.1);
+    border: 13px solid #EFEFEF;
+}
+
+main section .inner .main-menu .firms div div img {
     width: 149px;
     height: 49px;
 }
 
 main section.special-container .inner .main-menu .you-recently-viewed .options {
     display: flex;
-    width: 1110px;
+    /*   width: 1110px;*/
     justify-content: space-between;
     margin-top: 38px;
 }
@@ -257,6 +281,12 @@ main section.special-container .inner .main-menu .you-recently-viewed .options .
     height: 363px;
     background-color: white;
     padding: 25px;
+    transition: 250ms;
+}
+
+main section.special-container .inner .main-menu .you-recently-viewed .options .option:hover {
+    transition: 250ms;
+    transform: scale(1.05);
 }
 
 main section.special-container .inner .main-menu .you-recently-viewed .options .option img {
