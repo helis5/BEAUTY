@@ -257,7 +257,7 @@ main section .inner .main-menu .firms div div {
 main section .inner .main-menu .firms div div:hover{
     transition: 250ms;
     transform: scale(1.1);
-    border: 13px solid #EFEFEF;
+    background-color: white;
 }
 
 main section .inner .main-menu .firms div div img {
