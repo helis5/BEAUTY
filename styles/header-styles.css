@@ -4,7 +4,6 @@ header {
 
 .preheader.data-container {
     background-color: #EFEFEF;
-
 }
 
 .preheader .data {
@@ -56,6 +55,10 @@ header .search .internal-elements {
     color: black;
 }
 
+header .header-container .input-search{
+    display: none;
+}
+
 header .search .internal-elements .string-to-enter-container {
     width: 250px;
     height: 40px;
@@ -76,6 +79,10 @@ header .search .internal-elements .string-to-enter-container input {
     outline: none;
 }
 
+header .string-to-enter-container-media{
+    display: none;
+}
+
 header .search .internal-elements .string-to-enter-container:before {
     position: absolute;
     width: 25px;
@@ -87,6 +94,11 @@ header .search .internal-elements .string-to-enter-container:before {
     background-repeat: no-repeat;
     content: "";
 }
+
+header .background-banner .search .internal-elements .strips{
+    display: none;
+}
+
 
 
 header .search .internal-elements button {
