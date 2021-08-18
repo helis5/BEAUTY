@@ -14,8 +14,8 @@ main .super-chair {
 }
 
 main section.background-banner.container {
-    min-height: 604px;
-    /*height: 100%;*/
+    /*min-height: 604px;*/
+    height: 604px;
     /*padding: 10vh 0;*/
     background-size: cover;
     background: url(../images/armchair-banner.png) no-repeat center;

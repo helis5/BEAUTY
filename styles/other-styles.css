@@ -21,6 +21,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     font-family: Verdana, Helvetica, Arial, sans-serif;
 }
@@ -46,5 +49,9 @@ hr {
     background-color: #EFEFEF;
     border-width: 0px;
     margin: 0;
+}
+
+.media{
+    display: none;
 }
 

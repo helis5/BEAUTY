@@ -1,12 +1,20 @@
 
 footer {
-    height: 161px;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     font-size: 14px;
+}
+
+footer #footer-container{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
 footer .tools-container {
@@ -86,11 +94,12 @@ footer .contact-us-container .inner .contact-us > a {
 }
 
 footer div.under-the-footer {
+    display: flex;
     width: 100%;
     height: 64px;
 }
 
-footer div.under-the-footer .under-container {
+footer .under-the-footer .under-container {
     background-color: #EFEFEF;
     height: 64px;
     width: 100%;
@@ -100,6 +109,17 @@ footer div.under-the-footer .under-container {
     font-size: 12px;
     color: #828282;
     padding: 0 405px;
+}
+
+footer .media-under-the-footer {
+    display: none;
+}
+
+footer .no-media {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
 }
 
 

@@ -7,7 +7,41 @@
 }
 
 @media screen and (max-width: 960px) {
+    main section.background-banner.container{
+        width: 100%;
+        height: 219px;
+        background: #F13C6E url(../images/armchair-banner-media.jpg) no-repeat center;
+    }
 
+    main .super-chair .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 211px;
+        height: 174px;
+        margin: auto;
+        color: white;
+    }
+
+    main .super-chair .description h1 {
+        margin: 0;
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    main .super-chair .description p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    main .super-chair .description button {
+        width: 144px;
+        height: 34px;
+        margin: 0;
+        border: 0;
+        font-size: 11px;
+        background-color: #303030;
+    }
 }
 
 @media screen and (max-width: 540px) {
