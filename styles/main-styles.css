@@ -318,3 +318,7 @@ main section.special-container .inner .main-menu .you-recently-viewed .options .
     color: white;
     border: 0;
 }
+
+.main-menu-media {
+    display: none;
+}

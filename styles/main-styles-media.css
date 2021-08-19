@@ -4,6 +4,346 @@
 
 @media screen and (max-width: 1140px) {
 
+    main section.special-container .inner{
+        padding: 0;
+    }
+
+    main section.special-container .inner .main-menu-media{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options {
+        display: flex;
+        /*    width: 1110px;*/
+        justify-content: center;
+        margin-top: 38px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers div > h2 {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .slider-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 42px;
+        margin-top: 40px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .slider-container .slider{
+        display: flex;
+        justify-content: space-between;
+        width: 94px;
+        height: 12px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .slider-container .slider .active-option{
+        width: 40px;
+        height: inherit;
+        background-color: #F13C6E;
+        border-radius: 50px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .slider-container .slider .inactive-option{
+        width: 12px;
+        height: inherit;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 255px;
+        height: 363px;
+        padding: 25px;
+        transition: 250ms;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options .option:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options .option img {
+        width: 125px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options .option .text {
+        color: #333333;
+        margin: 0;
+        font-size: 14px;
+        margin-left: 13px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options .option .price {
+        margin: 0;
+        font-size: 21px;
+    }
+
+    main section.special-container .inner .main-menu-media .special-offers .options .option button {
+        display: flex;
+        width: 130px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        font-size: 14px;
+        background-color: #303030;
+        cursor: pointer;
+        color: white;
+        border: 0;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #EFEFEF;
+        color: white;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 415px;
+        height: 212px;
+        background-color: #F13C6E;
+        transition: 250ms;
+    }
+
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .text {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0 24px 28px;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .text .heading {
+        font-size: 16px;
+        margin: 0;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .text .paragraph {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .text div {
+        width: 159px;
+        height: 24px;
+        border-radius: 40px;
+        border: 0px;
+        background-color: #EFEFEF;
+        outline: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div#card-2{
+        margin-top: 28px;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div#card-2 .icon {
+        width: 250px;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div#card-2 .text button {
+        width: 120px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 40px;
+        font-size: 10px;
+        background-color: #F13C6E;
+        cursor: pointer;
+        color: white;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .text div input {
+        border: none;
+        width: inherit;
+        height: inherit;
+        padding: 0 20px 0 20px;
+        background-color: inherit;
+        outline: none;
+        color: #C4C4C4;
+        font-size: 10px;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .icon {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    main section.special-container .inner .main-menu-media .draws-and-card div .icon img {
+        height: 75px;
+    }
+
+    main .container-menu {
+        width: inherit;
+        height: 1869px;
+        background-color: #EFEFEF;
+    }
+
+    main section .inner .main-menu-media .firms {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #EFEFEF;
+        width: 100%;
+        height: 270px;
+        margin-bottom: 53px;
+        margin-top: 28px;
+    }
+
+    main section .inner .main-menu-media .firms div {
+        display: flex;
+        justify-content: center;
+        background-color: #EFEFEF;
+        width: inherit;
+        height: auto;
+        transition: 250ms;
+    }
+
+    main section .inner .main-menu-media .firms div div {
+        display: flex;
+        flex-direction: column;
+        width: 202px;
+        height: 88px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #EFEFEF;
+        background-color: white;
+    }
+
+    main section .inner .main-menu-media .firms div div:hover{
+        transition: 250ms;
+        transform: scale(1.1);
+        background-color: white;
+    }
+
+    main section .inner .main-menu-media .firms div div img {
+        width: 84px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options {
+        display: flex;
+        /*   width: 1110px;*/
+        justify-content: center;
+        margin-top: 38px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed div > h2{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .slider-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 42px;
+        margin-top: 40px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .slider-container .slider{
+        display: flex;
+        justify-content: space-between;
+        width: 94px;
+        height: 12px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .slider-container .slider .active-option{
+        width: 40px;
+        height: inherit;
+        background-color: #F13C6E;
+        border-radius: 50px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .slider-container .slider .inactive-option{
+        width: 12px;
+        height: inherit;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed h2{
+        font-size: 22px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 255px;
+        height: 363px;
+        padding: 25px;
+        transition: 250ms;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options .option:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options .option img {
+        width: 125px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options .option .text {
+        color: #333333;
+        margin: 0;
+        font-size: 14px;
+        margin-left: 13px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options .option .price {
+        margin: 0;
+        font-size: 21px;
+    }
+
+    main section.special-container .inner .main-menu-media .you-recently-viewed .options .option button {
+        display: flex;
+        width: 130px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        font-size: 14px;
+        background-color: #303030;
+        cursor: pointer;
+        color: white;
+        border: 0;
+    }
+
+    .main-menu {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -41,6 +381,11 @@
         border: 0;
         font-size: 11px;
         background-color: #303030;
+
+    }
+
+    .main-menu {
+        display: none;
     }
 }
 
