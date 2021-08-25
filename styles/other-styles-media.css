@@ -13,21 +13,27 @@
 
     aside.mobile-menu {
         display: flex;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         background-color: #00000070;
+        z-index: 3;
     }
 
     aside.mobile-menu .mobile-menu-container {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         max-width: 332px;
         width: 100%;
         height: 100%;
         background-color: #F13C6E;
     }
 
-    aside.mobile-menu .mobile-menu-container .mobile-menu-header {
+    aside.mobile-menu .mobile-menu-container .mobile-menu-header-block{
+
+    }
+
+    aside.mobile-menu .mobile-menu-container .mobile-menu-header-block .mobile-menu-header {
         display: flex;
         justify-content: space-between;
         height: 50px;
@@ -36,22 +42,26 @@
     }
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-list {
-        height: 620px;
+        height: 450px;
+        max-height: 470px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 50px;
         font-size: 16px;
+        margin-top: 6px;
     }
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-list .mobile-menu-list-block p{
         margin-left:  16px;
+        margin-top: 7px;
+        margin-bottom: 7px;
     }
 
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-footer {
-
-        height: 230px;
+        height: 170px;
+        max-height: 230px;
+        margin-bottom: 10px;
     }
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-footer .inner{
@@ -64,7 +74,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 0;
+        padding-bottom: 30px;
         font-size: 16px;
     }
 
