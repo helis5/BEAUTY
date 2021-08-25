@@ -18,6 +18,7 @@ html {
     overflow-x: hidden;
     position: relative;
     display: block;
+    height: 100%;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    height: 100%;
     font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
@@ -53,5 +55,13 @@ hr {
 
 .media{
     display: none;
+}
+
+section.mobile-menu{
+    display: none;
+}
+
+button{
+    cursor: pointer;
 }
 

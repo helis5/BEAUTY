@@ -31,11 +31,11 @@
         justify-content: space-between;
     }
 
-    header .header-container{
+    header .header-container {
 
     }
 
-    header .header-container .input-search .string-to-enter-container-media{
+    header .header-container .input-search .string-to-enter-container-media {
         display: flex;
         width: 252px;
         height: 30px;
@@ -46,14 +46,14 @@
         overflow: hidden;
     }
 
-    header .header-container .input-search{
+    header .header-container .input-search {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #F13C6E;
     }
 
-    header .header-container .input-search .string-to-enter-container-media input{
+    header .header-container .input-search .string-to-enter-container-media input {
         border: none;
         width: inherit;
         height: inherit;
@@ -89,7 +89,7 @@
         height: 50px;
     }
 
-    header .search .internal-elements button {
+    header .search .internal-elements button.callback {
         display: none;
     }
 

@@ -11,7 +11,20 @@
     <link href="styles/main-styles-media.css" rel="stylesheet" type="text/css">
     <link href="styles/footer-styles-media.css" rel="stylesheet" type="text/css">
     <link href="styles/other-styles-media.css" rel="stylesheet" type="text/css">
+    <link href="styles/utils-styles.css" rel="stylesheet" type="text/css">
     <title>Super-chair</title>
+    <script>
+        //Функция открытия меню
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');//Ищем меню
+            //Если мы нашли меню тогда выполняем код
+            if (mobileMenu) {
+                // тогда он удалится если его нет то добавится
+                //Если класс open УЖЕ есть в элементе headerMenu
+                mobileMenu.classList.toggle('open');
+            }
+        }
+    </script>
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>-->
 </head>
@@ -41,13 +54,13 @@
                     <div class="string-to-enter-container">
                         <input>
                     </div>
-                    <div class="strips">
+                    <button onclick="toggleMenu()" class="no-style-button strips">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </div>
+                    </button>
                     <a href="tel:+88121234567" class="phone-number">8 (812) 123-45-67</a>
-                    <button>Обратный звонок</button>
+                    <button class="callback">Обратный звонок</button>
                 </div>
             </div>
         </div>
@@ -72,300 +85,30 @@
             </div>
         </div>
     </div>
-</header>
+    <aside class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <img src="images/logo-mobile-menu.svg">
+                <button onclick="toggleMenu()" class="no-style-button">
+                    <img src="images/+.svg">
+                </button>
+            </div>
+            <hr>
+            <div class="mobile-menu-list">
+                <div>
 
+                </div>
+                <div>
 
-<main>
-    <section class="container background-banner">
-        <div class="inner banner">
-            <div class="super-chair">
-                <div class="description">
-                    <h1>Супер кресло</h1>
-                    <p>Текст акции всегда отражает<br class="media"> суть, а не <br class="media">
-                        болтовню, поэтому<br class="media"> внимательнее</p>
-                    <button>Подробнее</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container special-container">
-        <div class="inner">
-            <div class="main-menu">
-                <div class="special-offers">
-                    <div><h2>Специальные предложения</h2></div>
-                    <div class="options">
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="draws-and-card">
-                    <div id="card">
-                        <div class="text">
-                            <p class="heading">Получайте бонусы и подарки</p>
-                            <p class="paragraph">Каждый месяц разыгрываем<br>
-                                10 000 рублей для наших клиентов</p>
-                            <div>
-                                <input type="email" placeholder="Введите ваш e-mail">
-                            </div>
-                        </div>
-                        <div class="icon"><img src="images/e-mail.svg"></div>
-                    </div>
-                    <div id="card-2">
-                        <div class="text">
-                            <p class="heading">Заходите к нам</p>
-                            <p class="paragraph">Более 300 магазинов<br>
-                                по всей России</p>
-                            <button>Карта магазинов</button>
-                        </div>
-                        <div class="icon"><img src="images/truck.svg"></div>
-                    </div>
-                </div>
-                <div class="firms">
-                    <div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                    </div>
-                    <div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                    </div>
-                    <div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                    </div>
-                </div>
-                <div class="you-recently-viewed">
-                    <div><h2>Вы недавно смотрели</h2></div>
-                    <div class="options">
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                        <div class="option">
-                            <img src="images/armchair.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-menu-media">
-                <div class="special-offers">
-                    <div><h2>Специальные предложения</h2></div>
-                    <div class="options">
-                        <div class="option">
-                            <img src="images/armchair-grey-background.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                    </div>
-                    <div class="slider-container">
-                        <div class="slider">
-                            <div class="active-option"></div>
-                            <div class="inactive-option"></div>
-                            <div class="inactive-option"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="draws-and-card">
-                    <div id="card">
-                        <div class="text">
-                            <p class="heading">Получайте бонусы и подарки</p>
-                            <p class="paragraph">Каждый месяц разыгрываем<br>
-                                10 000 рублей для наших клиентов</p>
-                            <div>
-                                <input type="email" placeholder="Введите ваш e-mail">
-                            </div>
-                        </div>
-                        <div class="icon"><img src="images/e-mail.svg"></div>
-                    </div>
-                    <div id="card-2">
-                        <div class="text">
-                            <p class="heading">Заходите к нам</p>
-                            <p class="paragraph">Более 300 магазинов<br>
-                                по всей России</p>
-                            <button>Карта магазинов</button>
-                        </div>
-                        <div class="icon"><img src="images/truck.svg"></div>
-                    </div>
-                </div>
-                <div class="firms">
-                    <div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                    </div>
-                    <div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                    </div>
-                    <div>
-                        <div><img src="images/impuls.png"></div>
-                        <div><img src="images/impuls.png"></div>
-                    </div>
-                </div>
-                <div class="you-recently-viewed">
-                    <div><h2>Вы недавно смотрели</h2></div>
-                    <div class="options">
-                        <div class="option">
-                            <img src="images/armchair-grey-background.png">
-                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>
-                            <p class="price">9 900 ₽</p>
-                            <button>Купить</button>
-                        </div>
-                    </div>
-                    <div class="slider-container">
-                        <div class="slider">
-                            <div class="active-option"></div>
-                            <div class="inactive-option"></div>
-                            <div class="inactive-option"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <div id="footer-container">
-        <div class="container tools-container">
-            <div class="inner">
-                <div class="tools">
-                    <div class="column">
-                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>
-                        <hr class="no-media">
-                        <div class="points">
-                            <p>Насадки</p>
-                            <p>Инструменты</p>
-                            <p>Гель-лаки</p>
-                            <p>Дизайн</p>
-                            <p>Наращивание</p>
-                            <p>Оборудование</p>
-                        </div>
-                    </div>
-                    <hr class="media">
-                    <div class="column">
-                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>
-                        <hr class="no-media">
-                        <div class="points">
-                            <p>Насадки</p>
-                            <p>Инструменты</p>
-                            <p>Гель-лаки</p>
-                            <p>Дизайн</p>
-                            <p>Наращивание</p>
-                            <p>Оборудование</p>
-                        </div>
-                    </div>
-                    <hr class="media">
-                    <div class="column">
-                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>
-                        <hr class="no-media">
-                        <div class="points">
-                            <p>Насадки</p>
-                            <p>Инструменты</p>
-                            <p>Гель-лаки</p>
-                            <p>Дизайн</p>
-                            <p>Наращивание</p>
-                            <p>Оборудование</p>
-                        </div>
-                    </div>
-                    <hr class="media">
-                    <div class="column">
-                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>
-                        <hr class="no-media">
-                        <div class="points">
-                            <p>Насадки</p>
-                            <p>Инструменты</p>
-                            <p>Гель-лаки</p>
-                            <p>Дизайн</p>
-                            <p>Наращивание</p>
-                            <p>Оборудование</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="no-media">
-        <!---->
-        <div class="no-media">
-            <div class="container contact-us-container">
+            <div class="mobile-menu-footer">
                 <div class="inner">
                     <div class="contact-us">
-                        <div class="social-network-container">
-                            <div class="social-network"><img src="images/YouTube.svg"></div>
-                            <div class="social-network"><img src="images/Vk.svg"></div>
-                            <div class="social-network"><img src="images/Facebook.svg"></div>
-                            <div class="social-network"><img src="images/Instagram.svg"></div>
-                        </div>
-                        <p>198555, Невский пр. 140, офис 140</p>
-                        <a href="tel:+88121234567" class="phone-number">8 (812) 123-45-67</a>
-                        <button>Связаться с нами</button>
-                    </div>
-                </div>
-            </div>
-            <div class="under-the-footer">
-                <div class="under-container">
-                    <div>Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты
-                    </div>
-                    <div>Политика конфиденциальности</div>
-                </div>
-            </div>
-        </div>
-        <!---->
-        <div class="media-under-the-footer">
-            <div class="container contact-us-container">
-                <div class="inner">
-                    <div class="contact-us">
-
-                        <p>198555, Невский пр. 140, офис 140</p>
                         <a href="tel:+88121234567" class="phone-number">8 (812) 123-45-67</a>
                         <button>Обратный звонок</button>
                         <div class="social-network-container">
-                            <div class="social-network"><img src="images/YouTube.svg"></div>
+                            <div class="social-network"><img src="images/YouTube-media.svg"></div>
                             <div class="social-network"><img src="images/Vk.svg"></div>
                             <div class="social-network"><img src="images/Facebook.svg"></div>
                             <div class="social-network"><img src="images/Instagram.svg"></div>
@@ -373,17 +116,320 @@
                     </div>
                 </div>
             </div>
-            <div class="under-the-footer">
-                <div class="under-container">
-                    <div>Лучший магазин (с) 2019 Все права защищены. </br>Интернет-магазин оборудования для салонов
-                        красоты
-                    </div>
-                </div>
-            </div>
         </div>
-        <!---->
-    </div>
-</footer>
+    </aside>
+</header>
+
+
+<!--<main>-->
+<!--    <section class="container background-banner">-->
+<!--        <div class="inner banner">-->
+<!--            <div class="super-chair">-->
+<!--                <div class="description">-->
+<!--                    <h1>Супер кресло</h1>-->
+<!--                    <p>Текст акции всегда отражает<br class="media"> суть, а не <br class="media">-->
+<!--                        болтовню, поэтому<br class="media"> внимательнее</p>-->
+<!--                    <button>Подробнее</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="container special-container">-->
+<!--        <div class="inner">-->
+<!--            <div class="main-menu">-->
+<!--                <div class="special-offers">-->
+<!--                    <div><h2>Специальные предложения</h2></div>-->
+<!--                    <div class="options">-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="draws-and-card">-->
+<!--                    <div id="card">-->
+<!--                        <div class="text">-->
+<!--                            <p class="heading">Получайте бонусы и подарки</p>-->
+<!--                            <p class="paragraph">Каждый месяц разыгрываем<br>-->
+<!--                                10 000 рублей для наших клиентов</p>-->
+<!--                            <div>-->
+<!--                                <input type="email" placeholder="Введите ваш e-mail">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="icon"><img src="images/e-mail.svg"></div>-->
+<!--                    </div>-->
+<!--                    <div id="card-2">-->
+<!--                        <div class="text">-->
+<!--                            <p class="heading">Заходите к нам</p>-->
+<!--                            <p class="paragraph">Более 300 магазинов<br>-->
+<!--                                по всей России</p>-->
+<!--                            <button>Карта магазинов</button>-->
+<!--                        </div>-->
+<!--                        <div class="icon"><img src="images/truck.svg"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="firms">-->
+<!--                    <div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="you-recently-viewed">-->
+<!--                    <div><h2>Вы недавно смотрели</h2></div>-->
+<!--                    <div class="options">-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="main-menu-media">-->
+<!--                <div class="special-offers">-->
+<!--                    <div><h2>Специальные предложения</h2></div>-->
+<!--                    <div class="options">-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair-grey-background.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-container">-->
+<!--                        <div class="slider">-->
+<!--                            <div class="active-option"></div>-->
+<!--                            <div class="inactive-option"></div>-->
+<!--                            <div class="inactive-option"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="draws-and-card">-->
+<!--                    <div id="card">-->
+<!--                        <div class="text">-->
+<!--                            <p class="heading">Получайте бонусы и подарки</p>-->
+<!--                            <p class="paragraph">Каждый месяц разыгрываем<br>-->
+<!--                                10 000 рублей для наших клиентов</p>-->
+<!--                            <div>-->
+<!--                                <input type="email" placeholder="Введите ваш e-mail">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="icon"><img src="images/e-mail.svg"></div>-->
+<!--                    </div>-->
+<!--                    <div id="card-2">-->
+<!--                        <div class="text">-->
+<!--                            <p class="heading">Заходите к нам</p>-->
+<!--                            <p class="paragraph">Более 300 магазинов<br>-->
+<!--                                по всей России</p>-->
+<!--                            <button>Карта магазинов</button>-->
+<!--                        </div>-->
+<!--                        <div class="icon"><img src="images/truck.svg"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="firms">-->
+<!--                    <div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                        <div><img src="images/impuls.png"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="you-recently-viewed">-->
+<!--                    <div><h2>Вы недавно смотрели</h2></div>-->
+<!--                    <div class="options">-->
+<!--                        <div class="option">-->
+<!--                            <img src="images/armchair-grey-background.png">-->
+<!--                            <p class="text">Парикмахерское кресло «Норм» гидравлическое</p>-->
+<!--                            <p class="price">9 900 ₽</p>-->
+<!--                            <button>Купить</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-container">-->
+<!--                        <div class="slider">-->
+<!--                            <div class="active-option"></div>-->
+<!--                            <div class="inactive-option"></div>-->
+<!--                            <div class="inactive-option"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div id="footer-container">-->
+<!--        <div class="container tools-container">-->
+<!--            <div class="inner">-->
+<!--                <div class="tools">-->
+<!--                    <div class="column">-->
+<!--                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>-->
+<!--                        <hr class="no-media">-->
+<!--                        <div class="points">-->
+<!--                            <p>Насадки</p>-->
+<!--                            <p>Инструменты</p>-->
+<!--                            <p>Гель-лаки</p>-->
+<!--                            <p>Дизайн</p>-->
+<!--                            <p>Наращивание</p>-->
+<!--                            <p>Оборудование</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr class="media">-->
+<!--                    <div class="column">-->
+<!--                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>-->
+<!--                        <hr class="no-media">-->
+<!--                        <div class="points">-->
+<!--                            <p>Насадки</p>-->
+<!--                            <p>Инструменты</p>-->
+<!--                            <p>Гель-лаки</p>-->
+<!--                            <p>Дизайн</p>-->
+<!--                            <p>Наращивание</p>-->
+<!--                            <p>Оборудование</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr class="media">-->
+<!--                    <div class="column">-->
+<!--                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>-->
+<!--                        <hr class="no-media">-->
+<!--                        <div class="points">-->
+<!--                            <p>Насадки</p>-->
+<!--                            <p>Инструменты</p>-->
+<!--                            <p>Гель-лаки</p>-->
+<!--                            <p>Дизайн</p>-->
+<!--                            <p>Наращивание</p>-->
+<!--                            <p>Оборудование</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr class="media">-->
+<!--                    <div class="column">-->
+<!--                        <div class="column-name"><p>Популярные<br class="no-media"> категории</p></div>-->
+<!--                        <hr class="no-media">-->
+<!--                        <div class="points">-->
+<!--                            <p>Насадки</p>-->
+<!--                            <p>Инструменты</p>-->
+<!--                            <p>Гель-лаки</p>-->
+<!--                            <p>Дизайн</p>-->
+<!--                            <p>Наращивание</p>-->
+<!--                            <p>Оборудование</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <hr class="no-media">-->
+<!--        &lt;!&ndash;&ndash;&gt;-->
+<!--        <div class="no-media">-->
+<!--            <div class="container contact-us-container">-->
+<!--                <div class="inner">-->
+<!--                    <div class="contact-us">-->
+<!--                        <div class="social-network-container">-->
+<!--                            <div class="social-network"><img src="images/YouTube.svg"></div>-->
+<!--                            <div class="social-network"><img src="images/Vk.svg"></div>-->
+<!--                            <div class="social-network"><img src="images/Facebook.svg"></div>-->
+<!--                            <div class="social-network"><img src="images/Instagram.svg"></div>-->
+<!--                        </div>-->
+<!--                        <p>198555, Невский пр. 140, офис 140</p>-->
+<!--                        <a href="tel:+88121234567" class="phone-number">8 (812) 123-45-67</a>-->
+<!--                        <button>Связаться с нами</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="under-the-footer">-->
+<!--                <div class="under-container">-->
+<!--                    <div>Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты-->
+<!--                    </div>-->
+<!--                    <div>Политика конфиденциальности</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;&ndash;&gt;-->
+<!--        <div class="media-under-the-footer">-->
+<!--            <div class="container contact-us-container">-->
+<!--                <div class="inner">-->
+<!--                    <div class="contact-us">-->
+
+<!--                        <p>198555, Невский пр. 140, офис 140</p>-->
+<!--                        <a href="tel:+88121234567" class="phone-number">8 (812) 123-45-67</a>-->
+<!--                        <button>Обратный звонок</button>-->
+<!--                        <div class="social-network-container">-->
+<!--                            <div class="social-network"><img src="images/YouTube.svg"></div>-->
+<!--                            <div class="social-network"><img src="images/Vk.svg"></div>-->
+<!--                            <div class="social-network"><img src="images/Facebook.svg"></div>-->
+<!--                            <div class="social-network"><img src="images/Instagram.svg"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="under-the-footer">-->
+<!--                <div class="under-container">-->
+<!--                    <div>Лучший магазин (с) 2019 Все права защищены. </br>Интернет-магазин оборудования для салонов-->
+<!--                        красоты-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;&ndash;&gt;-->
+<!--    </div>-->
+<!--</footer>-->
 <!--Строка под footer-->
 
 </body>

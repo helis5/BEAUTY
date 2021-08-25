@@ -2,6 +2,21 @@ header {
     color: white;
 }
 
+header aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);  /*Сдвиг влево на 100%*/
+    transition: .3s;
+}
+
+header aside.open { /*При открытии*/
+    transform: translateX(0%);
+    transition: .3s;
+}
+
 .preheader.data-container {
     background-color: #EFEFEF;
 }
@@ -101,7 +116,7 @@ header .background-banner .search .internal-elements .strips{
 
 
 
-header .search .internal-elements button {
+header .search .internal-elements button.callback {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +129,7 @@ header .search .internal-elements button {
     cursor: pointer;
 }
 
-header .search .internal-elements button:hover {
+header .search .internal-elements button.callback:hover {
     background-color: #EFEFEF;
 }
 
