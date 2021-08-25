@@ -36,16 +36,31 @@
     }
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-list {
-
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        font-size: 16px;
     }
+
+    aside.mobile-menu .mobile-menu-container .mobile-menu-list .mobile-menu-list-block p{
+        margin-left:  16px;
+    }
+
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-footer {
 
+        height: 230px;
+    }
+
+    aside.mobile-menu .mobile-menu-container .mobile-menu-footer .inner{
+        height: inherit;
     }
 
     aside.mobile-menu .contact-us {
         display: flex;
-        height: 292px;
+        height: inherit;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -73,13 +88,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 31px;
-        height: 31px;
-        background-color: white;
+        width: 45px;
+        height: 45px;
+
+        border-radius: 50px;
+        border: 2px solid white;
     }
 
     aside.mobile-menu .contact-us .social-network-container .social-network img {
-        width: 14px;
+        width: auto;
     }
 }
 
