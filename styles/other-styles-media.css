@@ -13,7 +13,7 @@
 
     aside.mobile-menu {
         display: flex;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-color: #00000070;
         z-index: 3;
@@ -25,7 +25,7 @@
         justify-content: space-between;
         max-width: 332px;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #F13C6E;
     }
 
@@ -42,8 +42,8 @@
     }
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-list {
-        height: 450px;
-        max-height: 470px;
+        height: 400px;
+        min-height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -59,9 +59,8 @@
 
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-footer {
-        height: 170px;
+        height: 200px;
         max-height: 230px;
-        margin-bottom: 10px;
     }
 
     aside.mobile-menu .mobile-menu-container .mobile-menu-footer .inner{

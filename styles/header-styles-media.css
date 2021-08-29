@@ -111,6 +111,7 @@
         justify-content: space-between;
         width: 24px;
         height: 17px;
+        padding: 0;
     }
 
     header .background-banner .search .internal-elements .strips div {
